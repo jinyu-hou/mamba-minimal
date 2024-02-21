@@ -20,13 +20,17 @@ Glossary:
 
 """
 from __future__ import annotations
+import os
 import math
 import json
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torch.linalg import svd
 from dataclasses import dataclass
 from einops import rearrange, repeat, einsum
+
+from collections import namedtuple
 
 
 @dataclass
@@ -68,6 +72,10 @@ class Mamba(nn.Module):
                                                      # See "Weight Tying" paper
 
 
+    def lowrank_decomp(self, preserve_rate):
+        for layer in self.layers:
+            layer.lowrank_decomp(preserve_rate) 
+
     def forward(self, input_ids):
         """
         Args:
@@ -88,11 +96,14 @@ class Mamba(nn.Module):
         x = self.norm_f(x)
         logits = self.lm_head(x)
 
-        return logits
+        CausalLMOutput = namedtuple("CausalLMOutput", ["logits"])
+        return CausalLMOutput(logits=logits)
+
+        # return logits
 
     
     @staticmethod
-    def from_pretrained(pretrained_model_name: str):
+    def from_pretrained(pretrained_model_name: str, device="cuda"):
         """Load pretrained weights from HuggingFace into model.
     
         Args:
@@ -110,6 +121,7 @@ class Mamba(nn.Module):
         """
         from transformers.utils import WEIGHTS_NAME, CONFIG_NAME
         from transformers.utils.hub import cached_file
+        from accelerate import load_checkpoint_and_dispatch
         
         def load_config_hf(model_name):
             resolved_archive_file = cached_file(model_name, CONFIG_NAME,
@@ -120,7 +132,7 @@ class Mamba(nn.Module):
         def load_state_dict_hf(model_name, device=None, dtype=None):
             resolved_archive_file = cached_file(model_name, WEIGHTS_NAME,
                                                 _raise_exceptions_for_missing_entries=False)
-            return torch.load(resolved_archive_file, weights_only=True, map_location='cpu', mmap=True)
+            return torch.load(resolved_archive_file, weights_only=True, map_location='cpu')
         
         config_data = load_config_hf(pretrained_model_name)
         args = ModelArgs(
@@ -130,12 +142,25 @@ class Mamba(nn.Module):
         )
         model = Mamba(args)
         
-        state_dict = load_state_dict_hf(pretrained_model_name)
-        new_state_dict = {}
-        for key in state_dict:
-            new_key = key.replace('backbone.', '')
-            new_state_dict[new_key] = state_dict[key]
-        model.load_state_dict(new_state_dict)
+        # state_dict = load_state_dict_hf(pretrained_model_name)
+        # new_state_dict = {}
+        # for key in state_dict:
+        #     new_key = key.replace('backbone.', '')
+        #     new_state_dict[new_key] = state_dict[key]
+        # model.load_state_dict(new_state_dict)
+        weights_location = cached_file(pretrained_model_name, WEIGHTS_NAME,
+                                                _raise_exceptions_for_missing_entries=False)
+        weights_location_fixed = os.path.dirname(weights_location) + "/fix_" + os.path.basename(weights_location)
+        if not os.path.exists(weights_location_fixed):
+            state_dict = torch.load(resolved_archive_file, weights_only=True, map_location=device)
+            new_state_dict = {}
+            for key in state_dict:
+                new_key = key.replace('backbone.', '')
+                new_state_dict[new_key] = state_dict[key]
+            torch.save(new_state_dict, weights_location_fixed)
+        model = load_checkpoint_and_dispatch(
+            model, weights_location_fixed, device_map="auto", no_split_module_classes=["ResidualBlock"]
+        )
         
         return model
 
@@ -148,6 +173,8 @@ class ResidualBlock(nn.Module):
         self.mixer = MambaBlock(args)
         self.norm = RMSNorm(args.d_model)
         
+    def lowrank_decomp(self, preserve_rate):
+        self.mixer.lowrank_decomp(preserve_rate)
 
     def forward(self, x):
         """
@@ -202,6 +229,32 @@ class MambaBlock(nn.Module):
         self.D = nn.Parameter(torch.ones(args.d_inner))
         self.out_proj = nn.Linear(args.d_inner, args.d_model, bias=args.bias)
         
+    def lowrank_decomp(self, preserve_rate):
+        self.in_proj_lowrank = self._param_lowrank_decomp(preserve_rate, self.in_proj.weight, self.in_proj.bias)
+        self.out_proj_lowrank = self._param_lowrank_decomp(preserve_rate, self.out_proj.weight, self.out_proj.bias)
+        self.in_proj = None
+        self.out_proj = None
+
+    def _param_lowrank_decomp(self, preserve_rate, W, b=None):
+        dtype = W.dtype
+        device = W.device
+        factory_kwargs = {"device": device, "dtype": dtype}
+        n, m = W.shape
+        U, S, Vh = svd(W.float(), full_matrices=False)
+        r = len(S)
+        r_reduced = int(r * preserve_rate)
+        U_reduced = U.T[:r_reduced].T.to(dtype)
+        S_reduced_split = torch.diag(torch.sqrt(S[:r_reduced])).to(dtype)
+        Vh_reduced = Vh[:r_reduced].to(dtype)
+        A = nn.Linear(m, r_reduced, bias=False, **factory_kwargs)
+        A.weight = nn.Parameter(S_reduced_split @ Vh_reduced)
+        if b is None:
+            B = nn.Linear(r_reduced, n, bias=False, **factory_kwargs)
+        else:
+            B = nn.Linear(r_reduced, n, bias=True, **factory_kwargs)
+            B.bias = b
+        B.weight = nn.Parameter(U_reduced @ S_reduced_split)
+        return nn.Sequential(A, B)
 
     def forward(self, x):
         """Mamba block forward. This looks the same as Figure 3 in Section 3.4 in the Mamba paper [1].
@@ -219,7 +272,10 @@ class MambaBlock(nn.Module):
         """
         (b, l, d) = x.shape
         
-        x_and_res = self.in_proj(x)  # shape (b, l, 2 * d_in)
+        if self.in_proj is None:
+            x_and_res = self.in_proj_lowrank(x) 
+        else:
+            x_and_res = self.in_proj(x)  # shape (b, l, 2 * d_in)
         (x, res) = x_and_res.split(split_size=[self.args.d_inner, self.args.d_inner], dim=-1)
 
         x = rearrange(x, 'b l d_in -> b d_in l')
@@ -230,9 +286,12 @@ class MambaBlock(nn.Module):
 
         y = self.ssm(x)
         
-        y = y * F.silu(res)
+        y = y * F.silu(res.float())
         
-        output = self.out_proj(y)
+        if self.out_proj is None:
+            output = self.out_proj_lowrank(y.float())
+        else:
+            output = self.out_proj(y.float())
 
         return output
 
@@ -306,8 +365,8 @@ class MambaBlock(nn.Module):
         # - A is discretized using zero-order hold (ZOH) discretization (see Section 2 Equation 4 in the Mamba paper [1])
         # - B is discretized using a simplified Euler discretization instead of ZOH. From a discussion with authors:
         #   "A is the more important term and the performance doesn't change much with the simplification on B"
-        deltaA = torch.exp(einsum(delta, A, 'b l d_in, d_in n -> b l d_in n'))
-        deltaB_u = einsum(delta, B, u, 'b l d_in, b l n, b l d_in -> b l d_in n')
+        deltaA = torch.exp(einsum(delta.half(), A.half(), 'b l d_in, d_in n -> b l d_in n')).float()
+        deltaB_u = einsum(delta.half(), B.half(), u.half(), 'b l d_in, b l n, b l d_in -> b l d_in n').float()
         
         # Perform selective scan (see scan_SSM() in The Annotated S4 [2])
         # Note that the below is sequential, while the official implementation does a much faster parallel scan that
@@ -316,7 +375,7 @@ class MambaBlock(nn.Module):
         ys = []    
         for i in range(l):
             x = deltaA[:, i] * x + deltaB_u[:, i]
-            y = einsum(x, C[:, i, :], 'b d_in n, b n -> b d_in')
+            y = einsum(x.half(), C[:, i, :].half(), 'b d_in n, b n -> b d_in').float()
             ys.append(y)
         y = torch.stack(ys, dim=1)  # shape (b, l, d_in)
         
