@@ -25,11 +25,11 @@ class MambaEvalWrapper(HFLM):
 
     AUTO_MODEL_CLASS = transformers.AutoModelForCausalLM
 
-    def __init__(self, pretrained="state-spaces/mamba-2.8b", max_length=2048, batch_size=None, device="cuda",
+    def __init__(self, pretrained="state-spaces/mamba-2.8b-slimpj", max_length=2048, batch_size=None, device="cuda",
                  dtype=torch.float32, preserve_rate=1.0):
         LM.__init__(self)
         self._model = Mamba.from_pretrained(pretrained).to(dtype)
-        # self._model.lowrank_decomp(preserve_rate=float(preserve_rate), device=device, dtype=dtype)
+        self._model.lowrank_decomp(preserve_rate=float(preserve_rate), device=device, dtype=dtype)
         self.export_el_count(pretrained, float(preserve_rate))
         self.tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neox-20b")
         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id

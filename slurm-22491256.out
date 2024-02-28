@@ -1,0 +1,333 @@
++ module load anaconda3
+++ /usr/share/lmod/lmod/libexec/lmod bash load anaconda3
++ eval '__LMOD_REF_COUNT_ACLOCAL_PATH=/opt/packages/anaconda3-2022.10/share/aclocal:1;' export '__LMOD_REF_COUNT_ACLOCAL_PATH;' 'ACLOCAL_PATH=/opt/packages/anaconda3-2022.10/share/aclocal;' export 'ACLOCAL_PATH;' '__LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/opt/packages/anaconda3-2022.10:1;' export '__LMOD_REF_COUNT_CMAKE_PREFIX_PATH;' 'CMAKE_PREFIX_PATH=/opt/packages/anaconda3-2022.10;' export 'CMAKE_PREFIX_PATH;' 'CONDA_PKGS_DIRS=\$HOME/.conda/pkgs/;' export 'CONDA_PKGS_DIRS;' '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include:1;' export '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH;' 'CPLUS_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include;' export 'CPLUS_INCLUDE_PATH;' '__LMOD_REF_COUNT_C_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include:1;' export '__LMOD_REF_COUNT_C_INCLUDE_PATH;' 'C_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include;' export 'C_INCLUDE_PATH;' '__LMOD_REF_COUNT_INCLUDE=/opt/packages/anaconda3-2022.10/include:1;' export '__LMOD_REF_COUNT_INCLUDE;' 'INCLUDE=/opt/packages/anaconda3-2022.10/include;' export 'INCLUDE;' '__LMOD_REF_COUNT_LOADEDMODULES=allocations/1.0:1\;psc.allocations.user/1.0:1\;anaconda3/2022.10:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=allocations/1.0:psc.allocations.user/1.0:anaconda3/2022.10;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/usr/share/lmod/lmod/share/man:1\;/opt/puppetlabs/puppet/share/man:1\;/opt/packages/anaconda3-2022.10/man:1\;/opt/packages/anaconda3-2022.10/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3-2022.10/man:/opt/packages/anaconda3-2022.10/share/man;' export 'MANPATH;' 'MODULEPATH=/etc/scl/modulefiles:/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/opt/packages/anaconda3-2022.10/bin:2\;/opt/packages/anaconda3-2022.10/condabin:2\;/jet/home/jhou/.local/bin:1\;/jet/home/jhou/bin:1\;/opt/packages/psc.allocations.user/bin:1\;/opt/packages/allocations/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/opt/packages/interact/bin:1\;/opt/puppetlabs/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/packages/anaconda3-2022.10/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin;' export 'PATH;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/packages/anaconda3-2022.10/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/opt/packages/anaconda3-2022.10/lib/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT__LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:1\;/opt/modulefiles/production/psc.allocations.user/1.0.lua:1\;/opt/modulefiles/production/anaconda3/2022.10.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/psc.allocations.user/1.0.lua:/opt/modulefiles/production/anaconda3/2022.10.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIyLjEwLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k;' export '_ModuleTable001_;' '_ModuleTable002_=YTMvMjAyMi4xMCIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxbInBzYy5hbGxvY2F0aW9ucy51c2VyIl09e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL3BzYy5hbGxvY2F0aW9ucy51c2VyLzEuMC5sdWEiLFsiZnVsbE5hbWUiXT0icHNjLmFsbG9jYXRpb25zLnVzZXIvMS4wIixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0icHNjLmFsbG9jYXRpb25zLnVzZXIiLH0sfSxtcGF0aEE9eyIvZXRjL3NjbC9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMv;' export '_ModuleTable002_;' '_ModuleTable003_=cHJvZHVjdGlvbiIsIi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbiIsIi9vcHQvbW9kdWxlZmlsZXMvZGVwcmVjYXRlZCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4IiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwiL3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZSIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZXRjL3NjbC9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb246L29wdC9tb2R1bGVmaWxlcy9wcmVwcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvZGVwcmVjYXRlZDovdXNyL3NoYXJlL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6;' export '_ModuleTable003_;' '_ModuleTable004_=L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0=;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;' '__LMOD_STACK_CONDA_PKGS_DIRS=JEhPTUUvLmNvbmRhL3BrZ3Mv;' export '__LMOD_STACK_CONDA_PKGS_DIRS;' source '/opt/packages/anaconda3-2022.10/etc/profile.d/conda.sh;' conda 'activate;'
+++ __LMOD_REF_COUNT_ACLOCAL_PATH=/opt/packages/anaconda3-2022.10/share/aclocal:1
+++ export __LMOD_REF_COUNT_ACLOCAL_PATH
+++ ACLOCAL_PATH=/opt/packages/anaconda3-2022.10/share/aclocal
+++ export ACLOCAL_PATH
+++ __LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/opt/packages/anaconda3-2022.10:1
+++ export __LMOD_REF_COUNT_CMAKE_PREFIX_PATH
+++ CMAKE_PREFIX_PATH=/opt/packages/anaconda3-2022.10
+++ export CMAKE_PREFIX_PATH
+++ CONDA_PKGS_DIRS='$HOME/.conda/pkgs/'
+++ export CONDA_PKGS_DIRS
+++ __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include:1
+++ export __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH
+++ CPLUS_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include
+++ export CPLUS_INCLUDE_PATH
+++ __LMOD_REF_COUNT_C_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include:1
+++ export __LMOD_REF_COUNT_C_INCLUDE_PATH
+++ C_INCLUDE_PATH=/opt/packages/anaconda3-2022.10/include
+++ export C_INCLUDE_PATH
+++ __LMOD_REF_COUNT_INCLUDE=/opt/packages/anaconda3-2022.10/include:1
+++ export __LMOD_REF_COUNT_INCLUDE
+++ INCLUDE=/opt/packages/anaconda3-2022.10/include
+++ export INCLUDE
+++ __LMOD_REF_COUNT_LOADEDMODULES='allocations/1.0:1;psc.allocations.user/1.0:1;anaconda3/2022.10:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=allocations/1.0:psc.allocations.user/1.0:anaconda3/2022.10
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/usr/share/lmod/lmod/share/man:1;/opt/puppetlabs/puppet/share/man:1;/opt/packages/anaconda3-2022.10/man:1;/opt/packages/anaconda3-2022.10/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3-2022.10/man:/opt/packages/anaconda3-2022.10/share/man
+++ export MANPATH
+++ MODULEPATH=/etc/scl/modulefiles:/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/opt/packages/anaconda3-2022.10/bin:2;/opt/packages/anaconda3-2022.10/condabin:2;/jet/home/jhou/.local/bin:1;/jet/home/jhou/bin:1;/opt/packages/psc.allocations.user/bin:1;/opt/packages/allocations/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/packages/interact/bin:1;/opt/puppetlabs/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/opt/packages/anaconda3-2022.10/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export PATH
+++ __LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/packages/anaconda3-2022.10/lib/pkgconfig:1
+++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH=/opt/packages/anaconda3-2022.10/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ __LMOD_REF_COUNT__LMFILES_='/opt/modulefiles/production/allocations/1.0.lua:1;/opt/modulefiles/production/psc.allocations.user/1.0.lua:1;/opt/modulefiles/production/anaconda3/2022.10.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/psc.allocations.user/1.0.lua:/opt/modulefiles/production/anaconda3/2022.10.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIyLjEwLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k
+++ export _ModuleTable001_
+++ _ModuleTable002_=YTMvMjAyMi4xMCIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxbInBzYy5hbGxvY2F0aW9ucy51c2VyIl09e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL3BzYy5hbGxvY2F0aW9ucy51c2VyLzEuMC5sdWEiLFsiZnVsbE5hbWUiXT0icHNjLmFsbG9jYXRpb25zLnVzZXIvMS4wIixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0icHNjLmFsbG9jYXRpb25zLnVzZXIiLH0sfSxtcGF0aEE9eyIvZXRjL3NjbC9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMv
+++ export _ModuleTable002_
+++ _ModuleTable003_=cHJvZHVjdGlvbiIsIi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbiIsIi9vcHQvbW9kdWxlZmlsZXMvZGVwcmVjYXRlZCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4IiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwiL3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZSIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZXRjL3NjbC9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb246L29wdC9tb2R1bGVmaWxlcy9wcmVwcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvZGVwcmVjYXRlZDovdXNyL3NoYXJlL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6
+++ export _ModuleTable003_
+++ _ModuleTable004_=L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0=
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ __LMOD_STACK_CONDA_PKGS_DIRS=JEhPTUUvLmNvbmRhL3BrZ3Mv
+++ export __LMOD_STACK_CONDA_PKGS_DIRS
+++ source /opt/packages/anaconda3-2022.10/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/packages/anaconda3-2022.10/bin/conda
++++ CONDA_EXE=/opt/packages/anaconda3-2022.10/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/packages/anaconda3-2022.10/bin/python
++++ CONDA_PYTHON_EXE=/opt/packages/anaconda3-2022.10/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/packages/anaconda3-2022.10/bin/conda shell.posix activate
+++ ask_conda='. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/udunits2-deactivate.sh"
+. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/proj4-deactivate.sh"
+PS1='\''(base) '\''
+export PATH='\''/opt/packages/anaconda3-2022.10/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+. "/opt/packages/anaconda3-2022.10/etc/conda/activate.d/proj4-activate.sh"
+. "/opt/packages/anaconda3-2022.10/etc/conda/activate.d/udunits2-activate.sh"'
+++ eval '. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/udunits2-deactivate.sh"
+. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/proj4-deactivate.sh"
+PS1='\''(base) '\''
+export PATH='\''/opt/packages/anaconda3-2022.10/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+. "/opt/packages/anaconda3-2022.10/etc/conda/activate.d/proj4-activate.sh"
+. "/opt/packages/anaconda3-2022.10/etc/conda/activate.d/udunits2-activate.sh"'
++++ . /opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/udunits2-deactivate.sh
+++++ unset UDUNITS2_XML_PATH
+++++ [[ -n '' ]]
++++ . /opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/proj4-deactivate.sh
+++++ unset PROJ_LIB
+++++ unset PROJ_NETWORK
+++++ '[' -n '' ']'
++++ PS1='(base) '
++++ export PATH=/opt/packages/anaconda3-2022.10/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
++++ PATH=/opt/packages/anaconda3-2022.10/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ . /opt/packages/anaconda3-2022.10/etc/conda/activate.d/proj4-activate.sh
+++++ '[' -n '' ']'
+++++ '[' -d /opt/packages/anaconda3-2022.10/share/proj ']'
+++++ export PROJ_LIB=/opt/packages/anaconda3-2022.10/share/proj
+++++ PROJ_LIB=/opt/packages/anaconda3-2022.10/share/proj
+++++ '[' -f /opt/packages/anaconda3-2022.10/share/proj/copyright_and_licenses.csv ']'
+++++ export PROJ_NETWORK=ON
+++++ PROJ_NETWORK=ON
++++ . /opt/packages/anaconda3-2022.10/etc/conda/activate.d/udunits2-activate.sh
+++++ [[ -n '' ]]
+++++ '[' -d /opt/packages/anaconda3-2022.10/share/udunits ']'
+++++ export UDUNITS2_XML_PATH=/opt/packages/anaconda3-2022.10/share/udunits/udunits2.xml
+++++ UDUNITS2_XML_PATH=/opt/packages/anaconda3-2022.10/share/udunits/udunits2.xml
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ : -s sh
++ eval
++ ret=0
++ /usr/share/lmod/8.2.7/libexec/log_modules load anaconda3
++ return 0
++ cd /ocean/projects/cis240002p/jhou
++ conda activate envs/mamba
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate envs/mamba
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate envs/mamba
+++ /opt/packages/anaconda3-2022.10/bin/conda shell.posix activate envs/mamba
++ ask_conda='. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/udunits2-deactivate.sh"
+. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/proj4-deactivate.sh"
+PS1='\''(mamba) '\''
+export PATH='\''/ocean/projects/cis240002p/jhou/envs/mamba/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/ocean/projects/cis240002p/jhou/envs/mamba'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''mamba'\''
+export CONDA_PROMPT_MODIFIER='\''(mamba) '\''
+export CONDA_PREFIX_1='\''/opt/packages/anaconda3-2022.10'\''
+export CONDA_EXE='\''/opt/packages/anaconda3-2022.10/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/packages/anaconda3-2022.10/bin/python'\'''
++ eval '. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/udunits2-deactivate.sh"
+. "/opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/proj4-deactivate.sh"
+PS1='\''(mamba) '\''
+export PATH='\''/ocean/projects/cis240002p/jhou/envs/mamba/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/ocean/projects/cis240002p/jhou/envs/mamba'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''mamba'\''
+export CONDA_PROMPT_MODIFIER='\''(mamba) '\''
+export CONDA_PREFIX_1='\''/opt/packages/anaconda3-2022.10'\''
+export CONDA_EXE='\''/opt/packages/anaconda3-2022.10/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/packages/anaconda3-2022.10/bin/python'\'''
+++ . /opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/udunits2-deactivate.sh
++++ unset UDUNITS2_XML_PATH
++++ [[ -n '' ]]
+++ . /opt/packages/anaconda3-2022.10/etc/conda/deactivate.d/proj4-deactivate.sh
++++ unset PROJ_LIB
++++ unset PROJ_NETWORK
++++ '[' -n '' ']'
+++ PS1='(mamba) '
+++ export PATH=/ocean/projects/cis240002p/jhou/envs/mamba/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ PATH=/ocean/projects/cis240002p/jhou/envs/mamba/bin:/opt/packages/anaconda3-2022.10/condabin:/jet/home/jhou/.local/bin:/jet/home/jhou/bin:/opt/packages/psc.allocations.user/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export CONDA_PREFIX=/ocean/projects/cis240002p/jhou/envs/mamba
+++ CONDA_PREFIX=/ocean/projects/cis240002p/jhou/envs/mamba
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=mamba
+++ CONDA_DEFAULT_ENV=mamba
+++ export 'CONDA_PROMPT_MODIFIER=(mamba) '
+++ CONDA_PROMPT_MODIFIER='(mamba) '
+++ export CONDA_PREFIX_1=/opt/packages/anaconda3-2022.10
+++ CONDA_PREFIX_1=/opt/packages/anaconda3-2022.10
+++ export CONDA_EXE=/opt/packages/anaconda3-2022.10/bin/conda
+++ CONDA_EXE=/opt/packages/anaconda3-2022.10/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/packages/anaconda3-2022.10/bin/python
+++ CONDA_PYTHON_EXE=/opt/packages/anaconda3-2022.10/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd mamba-minimal
+++ date +%s
++ timestamp=1708552440
++ result_dir=results
++ model_id=mamba-2.8b-slimpj
+++ tr - _
+++ echo mamba-2.8b-slimpj
++ result_prefix=mamba_2.8b_slimpj
++ preserve_rate=1.0
+++ awk -vn=1.0 'BEGIN{printf("%.0f\n",n*100)}'
++ preserve_percentage=100
++ rm results/mamba_2.8b_slimpj-100.jsonl
+rm: cannot remove 'results/mamba_2.8b_slimpj-100.jsonl': No such file or directory
++ accelerate launch lm_harness_eval.py --model mamba --model_args pretrained=state-spaces/mamba-2.8b-slimpj,preserve_rate=1.0 --tasks boolq,piqa,hellaswag,winogrande,arc_easy,arc_challenge,openbookqa,race,truthfulqa_mc2 --device cuda --batch_size 1 --output_path results/mamba_2.8b_slimpj-100.jsonl
+2024-02-21:16:56:30,945 INFO     [utils.py:148] Note: NumExpr detected 40 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2024-02-21:16:56:30,946 INFO     [utils.py:148] Note: NumExpr detected 40 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2024-02-21:16:56:30,946 INFO     [utils.py:148] Note: NumExpr detected 40 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2024-02-21:16:56:30,947 INFO     [utils.py:148] Note: NumExpr detected 40 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/pandas/core/arrays/masked.py:60: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/pandas/core/arrays/masked.py:60: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/pandas/core/arrays/masked.py:60: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/pandas/core/arrays/masked.py:60: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+2024-02-21:16:56:43,016 INFO     [config.py:58] PyTorch version 1.13.1 available.
+2024-02-21:16:56:43,018 INFO     [config.py:58] PyTorch version 1.13.1 available.
+2024-02-21:16:56:43,021 INFO     [config.py:58] PyTorch version 1.13.1 available.
+2024-02-21:16:56:43,023 INFO     [config.py:58] PyTorch version 1.13.1 available.
+2024-02-21:16:57:54,537 INFO     [__main__.py:156] Verbosity set to INFO
+2024-02-21:16:57:54,538 INFO     [__main__.py:156] Verbosity set to INFO
+2024-02-21:16:57:54,540 INFO     [__main__.py:156] Verbosity set to INFO
+2024-02-21:16:57:54,542 INFO     [__main__.py:156] Verbosity set to INFO
+2024-02-21:16:59:28,422 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:28,422 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:28,422 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:28,458 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:35,686 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for gsm8k, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:35,686 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for gsm8k, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:35,686 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for gsm8k, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:35,687 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for gsm8k, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:35,691 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for EleutherAI/asdiv, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:35,699 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for EleutherAI/asdiv, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:35,705 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for EleutherAI/asdiv, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:35,711 WARNING  [templates.py:592] Tried instantiating `DatasetTemplates` for EleutherAI/asdiv, but no prompts found. Please ignore this warning if you are creating new prompts for this dataset.
+2024-02-21:16:59:43,742 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:43,745 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:43,750 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:43,758 WARNING  [__init__.py:194] Some tasks could not be loaded due to missing dependencies. Run with `--verbosity DEBUG` for full details.
+2024-02-21:16:59:43,768 INFO     [__main__.py:229] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'race', 'truthfulqa_mc2', 'winogrande']
+2024-02-21:16:59:43,768 INFO     [__main__.py:229] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'race', 'truthfulqa_mc2', 'winogrande']
+2024-02-21:16:59:43,769 INFO     [__main__.py:229] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'race', 'truthfulqa_mc2', 'winogrande']
+2024-02-21:16:59:43,769 INFO     [__main__.py:229] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'race', 'truthfulqa_mc2', 'winogrande']
+2024-02-21:17:02:48,593 WARNING  [big_modeling.py:444] You shouldn't move a model when it is dispatched on multiple devices.
+2024-02-21:17:02:48,597 WARNING  [big_modeling.py:444] You shouldn't move a model when it is dispatched on multiple devices.
+2024-02-21:17:02:48,631 WARNING  [big_modeling.py:444] You shouldn't move a model when it is dispatched on multiple devices.
+2024-02-21:17:02:48,648 WARNING  [big_modeling.py:444] You shouldn't move a model when it is dispatched on multiple devices.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2024-02-21:17:02:55,541 WARNING  [task.py:626] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-02-21:17:02:55,541 WARNING  [task.py:638] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-02-21:17:02:55,543 WARNING  [task.py:626] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-02-21:17:02:55,543 WARNING  [task.py:638] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-02-21:17:02:55,548 WARNING  [task.py:626] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-02-21:17:02:55,548 WARNING  [task.py:638] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-02-21:17:02:55,551 WARNING  [task.py:626] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-02-21:17:02:55,551 WARNING  [task.py:638] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/datasets/load.py:1454: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/datasets/load.py:1454: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/datasets/load.py:1454: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/ocean/projects/cis240002p/jhou/envs/mamba/lib/python3.10/site-packages/datasets/load.py:1454: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+2024-02-21:17:03:26,186 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:26,186 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:26,186 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:26,187 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:26,188 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:26,188 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:26,189 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:26,189 WARNING  [task.py:310] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-02-21:17:03:35,223 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:35,235 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:35,283 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:35,336 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:39,202 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:39,203 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:39,210 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:39,266 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:48,266 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:48,283 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:48,301 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:48,319 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:55,029 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:55,035 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:55,042 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:03:55,073 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:15,897 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:15,903 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:15,905 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:15,956 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:16,892 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:16,898 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:16,913 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:16,958 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:23,146 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:23,151 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:23,156 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:23,198 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:24,200 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:24,206 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:24,213 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:24,250 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:28,214 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:28,216 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:28,218 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:28,225 INFO     [task.py:363] Building contexts for task on rank 0...
+2024-02-21:17:04:28,426 INFO     [evaluator.py:324] Running loglikelihood requests
+2024-02-21:17:04:28,434 INFO     [evaluator.py:324] Running loglikelihood requests
+2024-02-21:17:04:28,438 INFO     [evaluator.py:324] Running loglikelihood requests
+2024-02-21:17:04:28,473 INFO     [evaluator.py:324] Running loglikelihood requests
+  0%|          | 0/79168 [00:00<?, ?it/s]  0%|          | 0/79168 [00:00<?, ?it/s]  0%|          | 0/79168 [00:00<?, ?it/s]  0%|          | 0/79168 [00:00<?, ?it/s]  0%|          | 1/79168 [00:51<1124:01:57, 51.11s/it]  0%|          | 1/79168 [00:50<1114:01:05, 50.66s/it]  0%|          | 1/79168 [00:51<1129:17:44, 51.35s/it]  0%|          | 1/79168 [00:51<1130:50:27, 51.42s/it]  0%|          | 2/79168 [01:22<867:44:41, 39.46s/it]   0%|          | 2/79168 [01:22<871:52:05, 39.65s/it]   0%|          | 2/79168 [01:22<866:13:38, 39.39s/it]   0%|          | 2/79168 [01:23<874:26:46, 39.76s/it]   0%|          | 3/79168 [01:54<791:29:53, 35.99s/it]  0%|          | 3/79168 [01:54<794:42:54, 36.14s/it]  0%|          | 3/79168 [01:54<791:49:47, 36.01s/it]  0%|          | 3/79168 [01:55<796:36:00, 36.23s/it]  0%|          | 4/79168 [02:26<759:06:33, 34.52s/it]  0%|          | 4/79168 [02:26<759:35:22, 34.54s/it]  0%|          | 4/79168 [02:27<762:06:32, 34.66s/it]  0%|          | 4/79168 [02:27<764:13:43, 34.75s/it]  0%|          | 5/79168 [02:55<712:04:16, 32.38s/it]  0%|          | 5/79168 [02:55<713:13:43, 32.43s/it]  0%|          | 5/79168 [02:55<714:55:11, 32.51s/it]  0%|          | 5/79168 [02:56<717:12:25, 32.62s/it]  0%|          | 6/79168 [03:23<683:12:06, 31.07s/it]  0%|          | 6/79168 [03:23<684:35:22, 31.13s/it]  0%|          | 6/79168 [03:24<685:26:33, 31.17s/it]  0%|          | 6/79168 [03:25<688:18:18, 31.30s/it]  0%|          | 7/79168 [03:51<657:36:27, 29.91s/it]  0%|          | 7/79168 [03:51<659:28:33, 29.99s/it]  0%|          | 7/79168 [03:52<660:05:35, 30.02s/it]  0%|          | 7/79168 [03:52<662:59:40, 30.15s/it]  0%|          | 8/79168 [04:20<650:23:07, 29.58s/it]  0%|          | 8/79168 [04:20<652:36:14, 29.68s/it]  0%|          | 8/79168 [04:21<653:15:54, 29.71s/it]  0%|          | 8/79168 [04:22<656:05:53, 29.84s/it]  0%|          | 9/79168 [04:47<636:02:07, 28.93s/it]  0%|          | 9/79168 [04:47<637:59:24, 29.01s/it]  0%|          | 9/79168 [04:48<638:41:17, 29.05s/it]  0%|          | 9/79168 [04:49<641:04:50, 29.16s/it]  0%|          | 10/79168 [05:15<632:48:37, 28.78s/it]  0%|          | 10/79168 [05:16<634:45:07, 28.87s/it]  0%|          | 10/79168 [05:17<635:05:38, 28.88s/it]  0%|          | 10/79168 [05:18<638:03:22, 29.02s/it]  0%|          | 11/79168 [05:43<625:45:15, 28.46s/it]  0%|          | 11/79168 [05:44<628:05:49, 28.57s/it]  0%|          | 11/79168 [05:45<628:09:02, 28.57s/it]  0%|          | 11/79168 [05:46<631:16:20, 28.71s/it]  0%|          | 12/79168 [06:12<627:57:16, 28.56s/it]  0%|          | 12/79168 [06:13<630:19:21, 28.67s/it]  0%|          | 12/79168 [06:14<630:41:54, 28.68s/it]  0%|          | 12/79168 [06:15<633:11:13, 28.80s/it]  0%|          | 13/79168 [06:40<622:55:45, 28.33s/it]  0%|          | 13/79168 [06:41<624:59:46, 28.43s/it]  0%|          | 13/79168 [06:41<625:19:54, 28.44s/it]  0%|          | 13/79168 [06:43<628:08:40, 28.57s/it]  0%|          | 14/79168 [07:08<618:38:16, 28.14s/it]  0%|          | 14/79168 [07:08<620:37:28, 28.23s/it]  0%|          | 14/79168 [07:09<621:16:37, 28.26s/it]  0%|          | 14/79168 [07:11<624:30:11, 28.40s/it]  0%|          | 15/79168 [07:36<619:17:30, 28.17s/it]  0%|          | 15/79168 [07:37<623:29:57, 28.36s/it]  0%|          | 15/79168 [07:38<623:46:18, 28.37s/it]  0%|          | 15/79168 [07:40<626:52:08, 28.51s/it]  0%|          | 16/79168 [08:04<616:48:58, 28.05s/it]  0%|          | 16/79168 [08:05<618:29:23, 28.13s/it]  0%|          | 16/79168 [08:06<618:52:52, 28.15s/it]  0%|          | 16/79168 [08:08<622:16:07, 28.30s/it]  0%|          | 17/79168 [08:32<616:53:23, 28.06s/it]  0%|          | 17/79168 [08:33<618:50:04, 28.15s/it]  0%|          | 17/79168 [08:34<619:17:19, 28.17s/it]  0%|          | 17/79168 [08:36<622:16:41, 28.30s/it]  0%|          | 18/79168 [09:00<620:10:37, 28.21s/it]  0%|          | 18/79168 [09:02<624:31:32, 28.41s/it]  0%|          | 18/79168 [09:03<625:18:36, 28.44s/it]  0%|          | 18/79168 [09:05<627:47:29, 28.55s/it]  0%|          | 19/79168 [09:28<620:20:45, 28.22s/it]  0%|          | 19/79168 [09:30<624:58:03, 28.43s/it]  0%|          | 19/79168 [09:31<626:31:54, 28.50s/it]  0%|          | 19/79168 [09:34<628:31:55, 28.59s/it]  0%|          | 20/79168 [09:57<621:28:27, 28.27s/it]  0%|          | 20/79168 [09:58<623:02:35, 28.34s/it]  0%|          | 20/79168 [10:00<624:14:06, 28.39s/it]  0%|          | 20/79168 [10:02<626:14:47, 28.48s/it]  0%|          | 21/79168 [10:24<616:02:52, 28.02s/it]  0%|          | 21/79168 [10:26<617:51:37, 28.10s/it]  0%|          | 21/79168 [10:27<618:59:31, 28.15s/it]  0%|          | 21/79168 [10:30<623:20:49, 28.35s/it]  0%|          | 22/79168 [10:52<612:21:28, 27.85s/it]  0%|          | 22/79168 [10:54<615:24:24, 27.99s/it]  0%|          | 22/79168 [10:55<617:28:28, 28.09s/it]  0%|          | 22/79168 [10:58<619:59:25, 28.20s/it]  0%|          | 23/79168 [11:19<610:14:09, 27.76s/it]  0%|          | 23/79168 [11:21<612:09:59, 27.85s/it]  0%|          | 23/79168 [11:22<612:31:20, 27.86s/it]  0%|          | 23/79168 [11:25<614:20:14, 27.94s/it]  0%|          | 24/79168 [11:46<604:43:57, 27.51s/it]  0%|          | 24/79168 [11:48<606:32:14, 27.59s/it]  0%|          | 24/79168 [11:50<607:13:18, 27.62s/it]  0%|          | 24/79168 [11:52<609:15:44, 27.71s/it]  0%|          | 25/79168 [12:13<601:10:23, 27.35s/it]  0%|          | 25/79168 [12:15<603:20:59, 27.44s/it]  0%|          | 25/79168 [12:17<603:41:02, 27.46s/it]  0%|          | 25/79168 [12:20<605:52:03, 27.56s/it]  0%|          | 26/79168 [12:40<598:09:22, 27.21s/it]  0%|          | 26/79168 [12:42<601:08:46, 27.34s/it]  0%|          | 26/79168 [12:44<601:17:45, 27.35s/it]  0%|          | 26/79168 [12:47<607:00:18, 27.61s/it]  0%|          | 27/79168 [13:05<585:25:15, 26.63s/it]  0%|          | 27/79168 [13:08<588:14:46, 26.76s/it]  0%|          | 27/79168 [13:09<588:33:38, 26.77s/it]  0%|          | 27/79168 [13:12<590:37:13, 26.87s/it]  0%|          | 28/79168 [13:31<577:23:29, 26.26s/it]  0%|          | 28/79168 [13:34<580:54:55, 26.43s/it]  0%|          | 28/79168 [13:35<581:25:56, 26.45s/it]  0%|          | 28/79168 [13:38<585:28:54, 26.63s/it]  0%|          | 29/79168 [13:57<576:54:30, 26.24s/it]  0%|          | 29/79168 [14:00<579:54:35, 26.38s/it]  0%|          | 29/79168 [14:01<580:30:17, 26.41s/it]  0%|          | 29/79168 [14:05<583:51:08, 26.56s/it]  0%|          | 30/79168 [14:23<576:06:02, 26.21s/it]  0%|          | 30/79168 [14:26<582:07:04, 26.48s/it]  0%|          | 30/79168 [14:28<582:36:47, 26.50s/it]  0%|          | 30/79168 [14:32<584:20:11, 26.58s/it]  0%|          | 31/79168 [14:49<572:11:02, 26.03s/it]  0%|          | 31/79168 [14:52<574:53:33, 26.15s/it]  0%|          | 31/79168 [14:54<577:27:16, 26.27s/it]  0%|          | 31/79168 [14:57<578:18:09, 26.31s/it]  0%|          | 32/79168 [15:14<569:35:24, 25.91s/it]  0%|          | 32/79168 [15:18<572:16:09, 26.03s/it]  0%|          | 32/79168 [15:19<574:27:20, 26.13s/it]  0%|          | 32/79168 [15:23<575:17:31, 26.17s/it]  0%|          | 33/79168 [15:40<567:30:36, 25.82s/it]  0%|          | 33/79168 [15:44<571:49:47, 26.01s/it]  0%|          | 33/79168 [15:45<571:49:44, 26.01s/it]  0%|          | 33/79168 [15:49<572:33:21, 26.05s/it]  0%|          | 34/79168 [16:05<560:23:53, 25.49s/it]  0%|          | 34/79168 [16:09<564:28:59, 25.68s/it]  0%|          | 34/79168 [16:10<564:32:56, 25.68s/it]  0%|          | 34/79168 [16:14<565:50:29, 25.74s/it]  0%|          | 35/79168 [16:28<548:20:03, 24.95s/it]  0%|          | 35/79168 [16:32<548:34:19, 24.96s/it]  0%|          | 35/79168 [16:33<549:14:11, 24.99s/it]  0%|          | 35/79168 [16:38<553:21:33, 25.17s/it]  0%|          | 36/79168 [16:51<536:19:39, 24.40s/it]  0%|          | 36/79168 [16:55<537:09:43, 24.44s/it]  0%|          | 36/79168 [16:57<538:01:39, 24.48s/it]  0%|          | 36/79168 [17:01<541:33:33, 24.64s/it]  0%|          | 37/79168 [17:15<532:19:20, 24.22s/it]  0%|          | 37/79168 [17:19<535:01:19, 24.34s/it]  0%|          | 37/79168 [17:21<536:01:51, 24.39s/it]  0%|          | 37/79168 [17:25<535:57:02, 24.38s/it]  0%|          | 38/79168 [17:38<524:11:55, 23.85s/it]  0%|          | 38/79168 [17:42<525:25:42, 23.90s/it]  0%|          | 38/79168 [17:44<526:18:16, 23.94s/it]  0%|          | 38/79168 [17:48<529:12:15, 24.08s/it]  0%|          | 39/79168 [18:02<524:22:59, 23.86s/it]  0%|          | 39/79168 [18:06<526:13:58, 23.94s/it]  0%|          | 39/79168 [18:08<526:50:13, 23.97s/it]  0%|          | 39/79168 [18:12<530:01:26, 24.11s/it]  0%|          | 40/79168 [18:26<525:27:17, 23.91s/it]  0%|          | 40/79168 [18:30<527:23:31, 23.99s/it]  0%|          | 40/79168 [18:32<528:17:17, 24.03s/it]  0%|          | 40/79168 [18:37<530:43:29, 24.15s/it]  0%|          | 41/79168 [18:50<522:41:29, 23.78s/it]  0%|          | 41/79168 [18:54<524:59:56, 23.89s/it]  0%|          | 41/79168 [18:56<526:17:23, 23.94s/it]  0%|          | 41/79168 [19:00<527:47:09, 24.01s/it]  0%|          | 42/79168 [19:12<517:02:54, 23.52s/it]  0%|          | 42/79168 [19:17<522:49:08, 23.79s/it]  0%|          | 42/79168 [19:19<522:51:10, 23.79s/it]  0%|          | 42/79168 [19:24<522:24:33, 23.77s/it]  0%|          | 43/79168 [19:36<516:06:55, 23.48s/it]  0%|          | 43/79168 [19:41<520:37:29, 23.69s/it]  0%|          | 43/79168 [19:43<520:44:51, 23.69s/it]  0%|          | 43/79168 [19:47<520:30:15, 23.68s/it]  0%|          | 44/79168 [19:58<510:17:10, 23.22s/it]  0%|          | 44/79168 [20:03<510:40:49, 23.24s/it]  0%|          | 44/79168 [20:05<510:58:28, 23.25s/it]  0%|          | 44/79168 [20:09<511:42:56, 23.28s/it]  0%|          | 45/79168 [20:21<503:00:46, 22.89s/it]  0%|          | 45/79168 [20:25<504:00:44, 22.93s/it]  0%|          | 45/79168 [20:27<504:16:55, 22.94s/it]  0%|          | 45/79168 [20:32<506:01:04, 23.02s/it]  0%|          | 46/79168 [20:44<506:27:03, 23.04s/it]  0%|          | 46/79168 [20:49<508:24:45, 23.13s/it]  0%|          | 46/79168 [20:51<511:24:31, 23.27s/it]  0%|          | 46/79168 [20:56<513:31:12, 23.36s/it]  0%|          | 47/79168 [21:07<507:42:13, 23.10s/it]  0%|          | 47/79168 [21:13<512:18:17, 23.31s/it]  0%|          | 47/79168 [21:14<511:56:38, 23.29s/it]  0%|          | 47/79168 [21:20<516:31:41, 23.50s/it]  0%|          | 48/79168 [21:30<507:27:57, 23.09s/it]  0%|          | 48/79168 [21:36<510:42:42, 23.24s/it]  0%|          | 48/79168 [21:38<511:41:04, 23.28s/it]  0%|          | 48/79168 [21:43<512:07:23, 23.30s/it]  0%|          | 49/79168 [21:53<507:18:43, 23.08s/it]  0%|          | 49/79168 [21:59<508:37:52, 23.14s/it]  0%|          | 49/79168 [22:00<507:49:40, 23.11s/it]  0%|          | 49/79168 [22:05<508:53:10, 23.15s/it]  0%|          | 50/79168 [22:16<504:25:45, 22.95s/it]  0%|          | 50/79168 [22:21<506:22:36, 23.04s/it]  0%|          | 50/79168 [22:23<505:30:57, 23.00s/it]  0%|          | 50/79168 [22:28<507:25:23, 23.09s/it]  0%|          | 51/79168 [22:39<501:53:37, 22.84s/it]  0%|          | 51/79168 [22:44<504:43:11, 22.97s/it]  0%|          | 51/79168 [22:46<504:22:59, 22.95s/it]  0%|          | 51/79168 [22:51<506:13:28, 23.03s/it]  0%|          | 52/79168 [23:01<500:11:34, 22.76s/it]  0%|          | 52/79168 [23:07<502:12:38, 22.85s/it]  0%|          | 52/79168 [23:09<502:03:43, 22.85s/it]  0%|          | 52/79168 [23:14<503:53:04, 22.93s/it]  0%|          | 53/79168 [23:24<498:41:19, 22.69s/it]  0%|          | 53/79168 [23:29<500:38:51, 22.78s/it]  0%|          | 53/79168 [23:31<501:13:18, 22.81s/it]  0%|          | 53/79168 [23:37<505:55:18, 23.02s/it]  0%|          | 54/79168 [23:47<500:16:27, 22.76s/it]  0%|          | 54/79168 [23:53<505:54:24, 23.02s/it]  0%|          | 54/79168 [23:55<508:21:46, 23.13s/it]  0%|          | 54/79168 [24:01<509:56:25, 23.20s/it]  0%|          | 55/79168 [24:10<501:20:43, 22.81s/it]  0%|          | 55/79168 [24:16<506:12:57, 23.04s/it]  0%|          | 55/79168 [24:18<506:23:33, 23.04s/it]  0%|          | 55/79168 [24:24<510:44:40, 23.24s/it]  0%|          | 56/79168 [24:33<502:42:05, 22.88s/it]  0%|          | 56/79168 [24:39<503:27:11, 22.91s/it]  0%|          | 56/79168 [24:41<503:40:48, 22.92s/it]  0%|          | 56/79168 [24:46<504:20:26, 22.95s/it]  0%|          | 57/79168 [24:57<512:43:58, 23.33s/it]  0%|          | 57/79168 [25:04<517:16:58, 23.54s/it]  0%|          | 57/79168 [25:06<519:26:44, 23.64s/it]  0%|          | 57/79168 [25:12<523:41:27, 23.83s/it]  0%|          | 58/79168 [25:21<515:10:46, 23.44s/it]  0%|          | 58/79168 [25:27<519:19:52, 23.63s/it]  0%|          | 58/79168 [25:30<519:01:06, 23.62s/it]  0%|          | 58/79168 [25:35<519:28:43, 23.64s/it]  0%|          | 59/79168 [25:44<511:12:43, 23.26s/it]  0%|          | 59/79168 [25:50<511:29:28, 23.28s/it]  0%|          | 59/79168 [25:52<511:08:37, 23.26s/it]  0%|          | 59/79168 [25:58<512:01:56, 23.30s/it]  0%|          | 60/79168 [26:05<502:04:14, 22.85s/it]  0%|          | 60/79168 [26:12<503:12:47, 22.90s/it]  0%|          | 60/79168 [26:14<503:19:41, 22.91s/it]  0%|          | 60/79168 [26:20<504:13:53, 22.95s/it]  0%|          | 61/79168 [26:27<495:37:51, 22.56s/it]  0%|          | 61/79168 [26:34<496:48:16, 22.61s/it]  0%|          | 61/79168 [26:36<496:51:09, 22.61s/it]  0%|          | 61/79168 [26:42<498:09:08, 22.67s/it]  0%|          | 62/79168 [26:49<490:52:13, 22.34s/it]  0%|          | 62/79168 [26:56<492:33:43, 22.42s/it]  0%|          | 62/79168 [26:58<493:06:12, 22.44s/it]  0%|          | 62/79168 [27:05<497:32:04, 22.64s/it]  0%|          | 63/79168 [27:11<487:06:05, 22.17s/it]  0%|          | 63/79168 [27:18<491:59:19, 22.39s/it]  0%|          | 63/79168 [27:20<492:23:16, 22.41s/it]  0%|          | 63/79168 [27:27<492:59:37, 22.44s/it]  0%|          | 64/79168 [27:33<484:14:56, 22.04s/it]  0%|          | 64/79168 [27:40<488:02:55, 22.21s/it]  0%|          | 64/79168 [27:42<488:33:40, 22.23s/it]  0%|          | 64/79168 [27:49<489:40:51, 22.29s/it]  0%|          | 65/79168 [27:54<481:16:31, 21.90s/it]  0%|          | 65/79168 [28:01<482:37:51, 21.96s/it]  0%|          | 65/79168 [28:04<485:07:53, 22.08s/it]  0%|          | 65/79168 [28:10<486:31:16, 22.14s/it]  0%|          | 66/79168 [28:16<482:32:37, 21.96s/it]  0%|          | 66/79168 [28:24<486:07:15, 22.12s/it]  0%|          | 66/79168 [28:26<485:44:53, 22.11s/it]  0%|          | 66/79168 [28:33<489:40:38, 22.29s/it]  0%|          | 67/79168 [28:38<479:27:34, 21.82s/it]  0%|          | 67/79168 [28:45<479:36:49, 21.83s/it]  0%|          | 67/79168 [28:47<479:43:14, 21.83s/it]  0%|          | 67/79168 [28:54<480:55:29, 21.89s/it]  0%|          | 68/79168 [28:59<474:35:08, 21.60s/it]  0%|          | 68/79168 [29:07<478:48:00, 21.79s/it]  0%|          | 68/79168 [29:09<479:11:46, 21.81s/it]  0%|          | 68/79168 [29:16<482:51:32, 21.98s/it]  0%|          | 69/79168 [29:21<476:58:02, 21.71s/it]  0%|          | 69/79168 [29:29<480:06:17, 21.85s/it]  0%|          | 69/79168 [29:31<480:37:27, 21.87s/it]  0%|          | 69/79168 [29:38<484:09:14, 22.04s/it]  0%|          | 70/79168 [29:42<474:48:38, 21.61s/it]  0%|          | 70/79168 [29:50<477:47:08, 21.75s/it]  0%|          | 70/79168 [29:53<481:04:55, 21.90s/it]  0%|          | 70/79168 [30:01<487:58:13, 22.21s/it]  0%|          | 71/79168 [30:04<477:02:25, 21.71s/it]  0%|          | 71/79168 [30:12<476:41:21, 21.70s/it]  0%|          | 71/79168 [30:14<477:07:41, 21.72s/it]  0%|          | 71/79168 [30:22<479:11:05, 21.81s/it]  0%|          | 72/79168 [30:25<470:33:40, 21.42s/it]  0%|          | 72/79168 [30:33<470:52:46, 21.43s/it]  0%|          | 72/79168 [30:35<471:32:45, 21.46s/it]  0%|          | 72/79168 [30:43<473:40:50, 21.56s/it]  0%|          | 73/79168 [30:46<465:50:29, 21.20s/it]  0%|          | 73/79168 [30:54<469:08:19, 21.35s/it]  0%|          | 73/79168 [30:56<470:14:18, 21.40s/it]  0%|          | 73/79168 [31:04<472:04:41, 21.49s/it]  0%|          | 74/79168 [31:07<465:15:03, 21.18s/it]  0%|          | 74/79168 [31:15<468:07:39, 21.31s/it]  0%|          | 74/79168 [31:18<469:08:32, 21.35s/it]  0%|          | 74/79168 [31:25<467:45:50, 21.29s/it]  0%|          | 75/79168 [31:27<456:27:55, 20.78s/it]  0%|          | 75/79168 [31:34<455:49:25, 20.75s/it]  0%|          | 75/79168 [31:37<457:20:09, 20.82s/it]  0%|          | 75/79168 [31:45<460:20:47, 20.95s/it]  0%|          | 76/79168 [31:46<450:54:02, 20.52s/it]  0%|          | 76/79168 [31:55<453:53:40, 20.66s/it]  0%|          | 76/79168 [31:58<454:50:16, 20.70s/it]  0%|          | 76/79168 [32:05<454:35:33, 20.69s/it]  0%|          | 77/79168 [32:07<448:40:09, 20.42s/it]  0%|          | 77/79168 [32:15<448:26:47, 20.41s/it]  0%|          | 77/79168 [32:17<449:14:38, 20.45s/it]  0%|          | 77/79168 [32:26<452:04:42, 20.58s/it]  0%|          | 78/79168 [32:26<444:38:01, 20.24s/it]  0%|          | 78/79168 [32:35<449:26:38, 20.46s/it]  0%|          | 78/79168 [32:38<451:40:47, 20.56s/it]  0%|          | 78/79168 [32:46<453:47:50, 20.66s/it]  0%|          | 79/79168 [32:47<447:12:43, 20.36s/it]  0%|          | 79/79168 [32:55<446:51:18, 20.34s/it]  0%|          | 79/79168 [32:58<446:58:45, 20.35s/it]  0%|          | 79/79168 [33:06<449:21:02, 20.45s/it]  0%|          | 80/79168 [33:07<443:32:10, 20.19s/it]  0%|          | 80/79168 [33:16<446:13:48, 20.31s/it]  0%|          | 80/79168 [33:18<446:45:33, 20.34s/it]  0%|          | 80/79168 [33:26<445:28:17, 20.28s/it]  0%|          | 81/79168 [33:26<438:41:58, 19.97s/it]  0%|          | 81/79168 [33:35<441:12:31, 20.08s/it]  0%|          | 81/79168 [33:38<441:43:54, 20.11s/it]  0%|          | 81/79168 [33:46<444:53:24, 20.25s/it]  0%|          | 82/79168 [33:46<438:32:46, 19.96s/it]  0%|          | 82/79168 [33:55<441:28:10, 20.10s/it]  0%|          | 82/79168 [33:58<441:55:22, 20.12s/it]  0%|          | 82/79168 [34:06<441:17:26, 20.09s/it]  0%|          | 83/79168 [34:06<435:41:22, 19.83s/it]  0%|          | 83/79168 [34:15<438:10:12, 19.95s/it]  0%|          | 83/79168 [34:18<438:43:10, 19.97s/it]  0%|          | 84/79168 [34:25<433:36:49, 19.74s/it]  0%|          | 83/79168 [34:26<438:44:17, 19.97s/it]  0%|          | 84/79168 [34:34<432:20:25, 19.68s/it]  0%|          | 84/79168 [34:37<432:50:02, 19.70s/it]  0%|          | 85/79168 [34:45<431:19:41, 19.63s/it]  0%|          | 84/79168 [34:45<436:22:09, 19.86s/it]  0%|          | 85/79168 [34:54<434:18:04, 19.77s/it]  0%|          | 85/79168 [34:57<437:50:58, 19.93s/it]  0%|          | 86/79168 [35:05<432:33:30, 19.69s/it]  0%|          | 85/79168 [35:05<437:34:15, 19.92s/it]  0%|          | 86/79168 [35:14<434:56:25, 19.80s/it]  0%|          | 86/79168 [35:17<434:34:38, 19.78s/it]  0%|          | 87/79168 [35:24<433:28:33, 19.73s/it]  0%|          | 86/79168 [35:25<438:18:52, 19.95s/it]  0%|          | 87/79168 [35:34<438:18:21, 19.95s/it]  0%|          | 87/79168 [35:37<438:14:55, 19.95s/it]  0%|          | 88/79168 [35:45<436:28:25, 19.87s/it]  0%|          | 87/79168 [35:46<441:04:58, 20.08s/it]  0%|          | 88/79168 [35:54<437:55:43, 19.94s/it]  0%|          | 88/79168 [35:57<438:13:04, 19.95s/it]  0%|          | 89/79168 [36:04<436:10:47, 19.86s/it]  0%|          | 88/79168 [36:06<443:27:39, 20.19s/it]  0%|          | 89/79168 [36:14<435:58:05, 19.85s/it]  0%|          | 89/79168 [36:17<436:22:54, 19.87s/it]  0%|          | 90/79168 [36:24<432:57:37, 19.71s/it]  0%|          | 89/79168 [36:26<437:57:56, 19.94s/it]  0%|          | 90/79168 [36:33<432:13:08, 19.68s/it]  0%|          | 90/79168 [36:36<432:54:39, 19.71s/it]  0%|          | 91/79168 [36:42<426:11:40, 19.40s/it]  0%|          | 90/79168 [36:45<432:55:08, 19.71s/it]  0%|          | 91/79168 [36:52<430:43:35, 19.61s/it]  0%|          | 91/79168 [36:56<432:43:36, 19.70s/it]  0%|          | 92/79168 [37:02<430:09:42, 19.58s/it]  0%|          | 91/79168 [37:05<434:17:49, 19.77s/it]  0%|          | 92/79168 [37:12<433:03:40, 19.72s/it]  0%|          | 92/79168 [37:16<433:24:32, 19.73s/it]  0%|          | 93/79168 [37:22<426:42:25, 19.43s/it]  0%|          | 92/79168 [37:25<434:43:13, 19.79s/it]  0%|          | 93/79168 [37:31<428:35:05, 19.51s/it]  0%|          | 93/79168 [37:35<429:46:02, 19.57s/it]  0%|          | 94/79168 [37:41<426:28:54, 19.42s/it]  0%|          | 93/79168 [37:44<433:20:37, 19.73s/it]  0%|          | 94/79168 [37:51<428:43:12, 19.52s/it]  0%|          | 94/79168 [37:54<428:57:40, 19.53s/it]  0%|          | 95/79168 [38:00<424:46:51, 19.34s/it]  0%|          | 94/79168 [38:03<430:01:19, 19.58s/it]  0%|          | 95/79168 [38:10<426:06:28, 19.40s/it]  0%|          | 95/79168 [38:14<429:00:32, 19.53s/it]  0%|          | 96/79168 [38:19<424:28:09, 19.33s/it]  0%|          | 95/79168 [38:23<428:03:12, 19.49s/it]  0%|          | 96/79168 [38:29<425:06:41, 19.35s/it]  0%|          | 96/79168 [38:33<424:24:04, 19.32s/it]  0%|          | 97/79168 [38:38<422:08:55, 19.22s/it]  0%|          | 96/79168 [38:42<425:50:39, 19.39s/it]  0%|          | 97/79168 [38:48<424:15:35, 19.32s/it]  0%|          | 97/79168 [38:52<424:15:03, 19.32s/it]  0%|          | 98/79168 [38:57<421:40:45, 19.20s/it]  0%|          | 97/79168 [39:02<428:33:22, 19.51s/it]  0%|          | 98/79168 [39:08<423:26:33, 19.28s/it]  0%|          | 98/79168 [39:11<423:40:47, 19.29s/it]  0%|          | 99/79168 [39:16<418:28:05, 19.05s/it]  0%|          | 98/79168 [39:20<421:25:52, 19.19s/it]  0%|          | 99/79168 [39:26<417:42:59, 19.02s/it]  0%|          | 99/79168 [39:30<418:06:17, 19.04s/it]  0%|          | 100/79168 [39:35<413:32:32, 18.83s/it]  0%|          | 99/79168 [39:39<420:03:05, 19.12s/it]  0%|          | 100/79168 [39:45<416:22:20, 18.96s/it]  0%|          | 100/79168 [39:48<416:31:27, 18.96s/it]  0%|          | 101/79168 [39:53<414:25:03, 18.87s/it]  0%|          | 100/79168 [39:58<421:26:37, 19.19s/it]  0%|          | 101/79168 [40:04<419:21:12, 19.09s/it]  0%|          | 101/79168 [40:08<420:27:55, 19.14s/it]  0%|          | 102/79168 [40:13<418:19:14, 19.05s/it]  0%|          | 101/79168 [40:18<421:37:34, 19.20s/it]  0%|          | 102/79168 [40:23<417:14:27, 19.00s/it]  0%|          | 102/79168 [40:27<419:13:13, 19.09s/it]  0%|          | 103/79168 [40:31<414:53:38, 18.89s/it]  0%|          | 102/79168 [40:37<421:37:37, 19.20s/it]  0%|          | 103/79168 [40:42<417:25:54, 19.01s/it]  0%|          | 103/79168 [40:46<417:28:13, 19.01s/it]  0%|          | 104/79168 [40:50<414:46:23, 18.89s/it]  0%|          | 103/79168 [40:56<419:23:21, 19.10s/it]  0%|          | 104/79168 [41:01<416:36:14, 18.97s/it]  0%|          | 104/79168 [41:05<420:16:10, 19.14s/it]  0%|          | 105/79168 [41:09<413:04:34, 18.81s/it]  0%|          | 104/79168 [41:15<417:56:23, 19.03s/it]  0%|          | 105/79168 [41:19<412:16:53, 18.77s/it]  0%|          | 105/79168 [41:23<412:03:17, 18.76s/it]  0%|          | 106/79168 [41:27<407:50:30, 18.57s/it]  0%|          | 105/79168 [41:33<413:38:43, 18.83s/it]  0%|          | 106/79168 [41:38<411:53:51, 18.76s/it]  0%|          | 106/79168 [41:42<414:35:00, 18.88s/it]  0%|          | 107/79168 [41:46<408:59:30, 18.62s/it]  0%|          | 106/79168 [41:52<413:35:12, 18.83s/it]  0%|          | 107/79168 [41:56<408:28:13, 18.60s/it]  0%|          | 107/79168 [42:00<407:31:56, 18.56s/it]  0%|          | 108/79168 [42:03<402:21:49, 18.32s/it]  0%|          | 107/79168 [42:10<406:57:18, 18.53s/it]  0%|          | 108/79168 [42:14<405:00:34, 18.44s/it]  0%|          | 108/79168 [42:18<404:40:09, 18.43s/it]  0%|          | 109/79168 [42:22<403:41:39, 18.38s/it]  0%|          | 108/79168 [42:29<411:18:06, 18.73s/it]  0%|          | 109/79168 [42:33<406:20:52, 18.50s/it]  0%|          | 109/79168 [42:37<406:59:49, 18.53s/it]  0%|          | 110/79168 [42:40<402:17:05, 18.32s/it]  0%|          | 109/79168 [42:47<406:02:44, 18.49s/it]  0%|          | 110/79168 [42:51<404:50:42, 18.44s/it]  0%|          | 110/79168 [42:55<404:59:03, 18.44s/it]  0%|          | 111/79168 [42:58<400:59:05, 18.26s/it]  0%|          | 110/79168 [43:05<404:49:13, 18.43s/it]  0%|          | 111/79168 [43:09<400:26:18, 18.23s/it]  0%|          | 111/79168 [43:13<400:30:37, 18.24s/it]  0%|          | 112/79168 [43:16<396:33:28, 18.06s/it]  0%|          | 111/79168 [43:23<403:21:59, 18.37s/it]  0%|          | 112/79168 [43:27<399:41:27, 18.20s/it]  0%|          | 112/79168 [43:31<402:53:49, 18.35s/it]  0%|          | 113/79168 [43:34<399:20:41, 18.19s/it]  0%|          | 112/79168 [43:42<405:10:20, 18.45s/it]  0%|          | 113/79168 [43:46<404:28:36, 18.42s/it]  0%|          | 113/79168 [43:50<404:06:08, 18.40s/it]  0%|          | 114/79168 [43:53<401:16:27, 18.27s/it]  0%|          | 113/79168 [44:00<403:53:57, 18.39s/it]  0%|          | 114/79168 [44:04<403:02:05, 18.35s/it]  0%|          | 114/79168 [44:08<402:45:45, 18.34s/it]  0%|          | 115/79168 [44:11<402:42:30, 18.34s/it]  0%|          | 114/79168 [44:19<406:26:20, 18.51s/it]  0%|          | 115/79168 [44:22<401:36:08, 18.29s/it]  0%|          | 115/79168 [44:27<404:36:27, 18.43s/it]  0%|          | 116/79168 [44:29<400:57:31, 18.26s/it]  0%|          | 115/79168 [44:37<405:01:35, 18.44s/it]  0%|          | 116/79168 [44:41<403:44:52, 18.39s/it]  0%|          | 116/79168 [44:45<403:04:39, 18.36s/it]  0%|          | 117/79168 [44:48<402:43:43, 18.34s/it]  0%|          | 116/79168 [44:56<409:21:28, 18.64s/it]  0%|          | 117/79168 [45:00<404:59:49, 18.44s/it]  0%|          | 117/79168 [45:04<404:58:10, 18.44s/it]  0%|          | 118/79168 [45:06<400:31:43, 18.24s/it]  0%|          | 117/79168 [45:14<404:07:09, 18.40s/it]  0%|          | 118/79168 [45:17<399:52:34, 18.21s/it]  0%|          | 118/79168 [45:22<403:04:16, 18.36s/it]  0%|          | 119/79168 [45:24<399:15:42, 18.18s/it]  0%|          | 118/79168 [45:33<406:10:32, 18.50s/it]  0%|          | 119/79168 [45:36<405:44:33, 18.48s/it]  0%|          | 119/79168 [45:40<404:38:45, 18.43s/it]  0%|          | 120/79168 [45:42<401:11:18, 18.27s/it]  0%|          | 119/79168 [45:51<405:05:58, 18.45s/it]  0%|          | 120/79168 [45:54<400:56:28, 18.26s/it]  0%|          | 120/79168 [45:59<403:27:38, 18.37s/it]  0%|          | 121/79168 [46:00<398:09:57, 18.13s/it]  0%|          | 120/79168 [46:10<406:28:03, 18.51s/it]  0%|          | 121/79168 [46:12<400:38:31, 18.25s/it]  0%|          | 121/79168 [46:16<399:18:58, 18.19s/it]  0%|          | 122/79168 [46:18<394:30:10, 17.97s/it]  0%|          | 121/79168 [46:27<400:24:19, 18.24s/it]  0%|          | 122/79168 [46:30<396:50:27, 18.07s/it]  0%|          | 122/79168 [46:34<396:20:27, 18.05s/it]  0%|          | 123/79168 [46:35<392:24:09, 17.87s/it]  0%|          | 122/79168 [46:45<395:59:48, 18.03s/it]  0%|          | 123/79168 [46:47<391:22:31, 17.82s/it]  0%|          | 123/79168 [46:51<391:07:19, 17.81s/it]  0%|          | 124/79168 [46:52<387:21:18, 17.64s/it]  0%|          | 123/79168 [47:02<392:20:26, 17.87s/it]  0%|          | 124/79168 [47:05<388:23:11, 17.69s/it]  0%|          | 124/79168 [47:09<389:19:53, 17.73s/it]  0%|          | 125/79168 [47:10<386:39:53, 17.61s/it]  0%|          | 124/79168 [47:21<393:27:36, 17.92s/it]  0%|          | 125/79168 [47:23<390:22:34, 17.78s/it]  0%|          | 125/79168 [47:27<392:52:14, 17.89s/it]  0%|          | 126/79168 [47:28<389:04:11, 17.72s/it]  0%|          | 125/79168 [47:39<395:41:20, 18.02s/it]  0%|          | 126/79168 [47:41<395:43:14, 18.02s/it]  0%|          | 126/79168 [47:45<394:23:55, 17.96s/it]  0%|          | 127/79168 [47:46<392:00:54, 17.85s/it]  0%|          | 126/79168 [47:57<396:57:28, 18.08s/it]  0%|          | 127/79168 [47:59<393:12:55, 17.91s/it]  0%|          | 127/79168 [48:03<392:21:29, 17.87s/it]  0%|          | 128/79168 [48:04<388:43:17, 17.70s/it]  0%|          | 127/79168 [48:15<394:46:07, 17.98s/it]  0%|          | 128/79168 [48:16<391:29:57, 17.83s/it]  0%|          | 128/79168 [48:21<393:30:43, 17.92s/it]  0%|          | 129/79168 [48:21<390:21:02, 17.78s/it]  0%|          | 128/79168 [48:33<396:00:04, 18.04s/it]  0%|          | 129/79168 [48:34<393:07:06, 17.91s/it]  0%|          | 129/79168 [48:39<392:09:15, 17.86s/it]  0%|          | 130/79168 [48:39<389:12:42, 17.73s/it]  0%|          | 129/79168 [48:50<392:58:47, 17.90s/it]  0%|          | 130/79168 [48:52<390:27:29, 17.78s/it]  0%|          | 130/79168 [48:56<390:00:04, 17.76s/it]  0%|          | 131/79168 [49:00<410:17:44, 18.69s/it]  0%|          | 130/79168 [49:09<395:57:14, 18.03s/it]  0%|          | 131/79168 [49:13<408:55:54, 18.63s/it]  0%|          | 131/79168 [49:17<408:19:31, 18.60s/it]  0%|          | 132/79168 [49:18<403:13:50, 18.37s/it]  0%|          | 131/79168 [49:29<406:55:47, 18.53s/it]  0%|          | 132/79168 [49:30<400:22:58, 18.24s/it]  0%|          | 132/79168 [49:34<402:05:36, 18.31s/it]  0%|          | 133/79168 [49:35<397:04:34, 18.09s/it]  0%|          | 132/79168 [49:47<405:24:01, 18.47s/it]  0%|          | 133/79168 [49:48<398:12:35, 18.14s/it]  0%|          | 133/79168 [49:52<398:50:08, 18.17s/it]  0%|          | 134/79168 [49:53<395:01:16, 17.99s/it]  0%|          | 133/79168 [50:05<400:36:25, 18.25s/it]  0%|          | 134/79168 [50:06<397:21:15, 18.10s/it]  0%|          | 134/79168 [50:10<396:44:39, 18.07s/it]  0%|          | 135/79168 [50:10<391:50:15, 17.85s/it]  0%|          | 134/79168 [50:23<398:35:24, 18.16s/it]  0%|          | 135/79168 [50:23<392:44:15, 17.89s/it]  0%|          | 135/79168 [50:28<392:50:07, 17.89s/it]  0%|          | 136/79168 [50:28<388:31:49, 17.70s/it]  0%|          | 135/79168 [50:40<394:58:14, 17.99s/it]  0%|          | 136/79168 [50:41<390:04:26, 17.77s/it]  0%|          | 136/79168 [50:45<390:00:21, 17.77s/it]  0%|          | 137/79168 [50:45<386:18:45, 17.60s/it]  0%|          | 136/79168 [50:58<392:17:26, 17.87s/it]  0%|          | 137/79168 [50:58<387:57:58, 17.67s/it]  0%|          | 137/79168 [51:03<388:26:12, 17.69s/it]  0%|          | 138/79168 [51:02<385:14:22, 17.55s/it]  0%|          | 137/79168 [51:15<391:26:16, 17.83s/it]  0%|          | 138/79168 [51:16<389:56:02, 17.76s/it]  0%|          | 139/79168 [51:20<387:15:09, 17.64s/it]  0%|          | 138/79168 [51:21<390:10:50, 17.77s/it]  0%|          | 138/79168 [51:34<394:18:09, 17.96s/it]  0%|          | 139/79168 [51:34<390:21:39, 17.78s/it]  0%|          | 140/79168 [51:38<388:07:13, 17.68s/it]  0%|          | 139/79168 [51:38<390:45:21, 17.80s/it]  0%|          | 139/79168 [51:51<391:46:37, 17.85s/it]  0%|          | 140/79168 [51:51<388:36:04, 17.70s/it]  0%|          | 141/79168 [51:55<385:59:52, 17.58s/it]  0%|          | 140/79168 [51:56<388:40:31, 17.71s/it]  0%|          | 140/79168 [52:08<386:31:24, 17.61s/it]  0%|          | 141/79168 [52:09<384:29:58, 17.52s/it]  0%|          | 142/79168 [52:13<384:09:33, 17.50s/it]  0%|          | 141/79168 [52:13<386:51:24, 17.62s/it]  0%|          | 141/79168 [52:27<394:31:18, 17.97s/it]  0%|          | 142/79168 [52:27<389:24:22, 17.74s/it]  0%|          | 143/79168 [52:31<386:32:36, 17.61s/it]  0%|          | 142/79168 [52:32<390:18:35, 17.78s/it]slurmstepd: error: *** JOB 22491256 ON v002 CANCELLED AT 2024-02-21T17:59:36 ***

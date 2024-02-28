@@ -72,9 +72,9 @@ class Mamba(nn.Module):
                                                      # See "Weight Tying" paper
 
 
-    def lowrank_decomp(self, preserve_rate):
+    def lowrank_decomp(self, preserve_rate, device, dtype):
         for layer in self.layers:
-            layer.lowrank_decomp(preserve_rate) 
+            layer.lowrank_decomp(preserve_rate, device=device, dtype=dtype) 
 
     def forward(self, input_ids):
         """
@@ -173,8 +173,8 @@ class ResidualBlock(nn.Module):
         self.mixer = MambaBlock(args)
         self.norm = RMSNorm(args.d_model)
         
-    def lowrank_decomp(self, preserve_rate):
-        self.mixer.lowrank_decomp(preserve_rate)
+    def lowrank_decomp(self, preserve_rate, device, dtype):
+        self.mixer.lowrank_decomp(preserve_rate, device=device, dtype=dtype)
 
     def forward(self, x):
         """
@@ -229,13 +229,20 @@ class MambaBlock(nn.Module):
         self.D = nn.Parameter(torch.ones(args.d_inner))
         self.out_proj = nn.Linear(args.d_inner, args.d_model, bias=args.bias)
         
-    def lowrank_decomp(self, preserve_rate):
-        self.in_proj_lowrank = self._param_lowrank_decomp(preserve_rate, self.in_proj.weight, self.in_proj.bias)
-        self.out_proj_lowrank = self._param_lowrank_decomp(preserve_rate, self.out_proj.weight, self.out_proj.bias)
-        self.in_proj = None
-        self.out_proj = None
+    def lowrank_decomp(self, preserve_rate, device, dtype):
+        A_lowrank = self._param_lowrank_decomp(preserve_rate, self.A_log.float(), device=device, dtype=torch.float32)
+        A_lowrank_weight = A_lowrank[1].weight @ A_lowrank[0].weight
+        # print(A_lowrank[1].weight.shape, A_lowrank[0].weight.shape)
+        self.A_log = nn.Parameter(A_lowrank_weight)
+        preserve_rate = 1.0
 
-    def _param_lowrank_decomp(self, preserve_rate, W, b=None):
+        # self.in_proj_lowrank = self._param_lowrank_decomp(preserve_rate, self.in_proj.weight, self.in_proj.bias)
+        # self.out_proj_lowrank = self._param_lowrank_decomp(preserve_rate, self.out_proj.weight, self.out_proj.bias)
+        # self.in_proj = None
+        # self.out_proj = None
+        
+
+    def _param_lowrank_decomp(self, preserve_rate, W, b=None, device=None, dtype=None):
         dtype = W.dtype
         device = W.device
         factory_kwargs = {"device": device, "dtype": dtype}
@@ -325,8 +332,9 @@ class MambaBlock(nn.Module):
         
         (delta, B, C) = x_dbl.split(split_size=[self.args.dt_rank, n, n], dim=-1)  # delta: (b, l, dt_rank). B, C: (b, l, n)
         delta = F.softplus(self.dt_proj(delta))  # (b, l, d_in)
-        
+        # shrink
         y = self.selective_scan(x, delta, A, B, C, D)  # This is similar to run_SSM(A, B, C, u) in The Annotated S4 [2]
+        # inflate
         
         return y
 
