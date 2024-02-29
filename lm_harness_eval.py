@@ -3,7 +3,8 @@ import torch
 import transformers
 from transformers import AutoTokenizer
 
-from model import Mamba
+# from model import Mamba
+from model_randproj import Mamba
 
 from lm_eval.api.model import LM
 from lm_eval.models.huggingface import HFLM

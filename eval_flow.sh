@@ -16,7 +16,7 @@ timestamp=$(date +%s)
 result_dir=results
 model_id=mamba-2.8b-slimpj
 result_prefix=$(echo $model_id | tr - _)
-preserve_rate=1.0
+preserve_rate=0.1
 preserve_percentage=$(awk -vn=$preserve_rate 'BEGIN{printf("%.0f\n",n*100)}')
 
 accelerate launch lm_harness_eval.py \
